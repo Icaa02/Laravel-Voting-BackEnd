@@ -74,6 +74,7 @@ class KandidatsController extends Controller
                 Kandidats::create([
                     'nama_kandidat' => $request->nama_kandidat,
                     'no_urut' => $request->no_urut,
+                    'visi_misi' => $request->visi_misi,
                     'url' => $path,
                 ]);
             }

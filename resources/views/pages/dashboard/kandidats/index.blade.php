@@ -25,6 +25,10 @@
                         name: 'no_urut'
                     },
                     {
+                        data: 'visi_misi',
+                        name: 'visi_misi'
+                    },
+                    {
                         data: 'url',
                         name: 'url',
                         width: '25%'
@@ -57,6 +61,7 @@
                                 <th>ID</th>
                                 <th>Nama Kandidat</th>
                                 <th>No urut</th>
+                                <th>Visi Misi</th>
                                 <th>Photo</th>
                                 <th>Aksi</th>
                             </tr>

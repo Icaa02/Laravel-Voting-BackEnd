@@ -20,6 +20,7 @@ class Kandidats extends Model
         'name',
         'nama_kandidat',
         'no_urut',
+        'visi_misi',
         'url',
     ];
 
