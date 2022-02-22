@@ -6,6 +6,7 @@ use App\Models\Hasils;
 use App\Models\Kandidats;
 use App\Models\Pemilihs;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Yajra\DataTables\Facades\DataTables;
 
 class HasilsController extends Controller
@@ -17,6 +18,9 @@ class HasilsController extends Controller
      */
     public function index()
     {
+        $select = DB::select('select * from hasils');
+        return view('index')->with('name', $select);
+
         if (request()->ajax()) {
             $query = Hasils::all();
 
