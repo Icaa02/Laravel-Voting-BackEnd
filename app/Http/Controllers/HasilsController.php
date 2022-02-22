@@ -18,6 +18,9 @@ class HasilsController extends Controller
      */
     public function index()
     {
+        $hasils = Hasils::all();
+        return view('pages.dashboard.hasils.index');
+        // return $hasils;
         // $select = DB::select('select * from hasils');
         // return view('index', ['hasils' => $select]);
 
