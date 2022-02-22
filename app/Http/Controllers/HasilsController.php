@@ -19,7 +19,7 @@ class HasilsController extends Controller
     public function index()
     {
         $select = DB::select('select * from hasils');
-        return view('index')->with('name', $select);
+        return view('index', ['hasils' => $select]);
 
         if (request()->ajax()) {
             $query = Hasils::all();
