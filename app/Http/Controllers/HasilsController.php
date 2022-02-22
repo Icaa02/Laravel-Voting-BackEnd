@@ -25,9 +25,9 @@ class HasilsController extends Controller
             $query = Hasils::all();
 
             return DataTables::of($query)
-                ->editColumn('nama_kandidat', function ($item) {
+                ->editColumn('kandidat_id', function ($item) {
                     $kandidat = Kandidats::find($item->kandidat_id);
-                    return '<div class="content-center"> ' . $kandidat->nama_kandidat . '  </div>';
+                    return '<div class="content-center"> ' . $kandidat->kandidat_id . '  </div>';
                 })
                 ->editColumn('id_nfc', function ($item) {
                     $pemilih = Pemilihs::find($item->pemilih_id);
