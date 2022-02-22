@@ -21,15 +21,15 @@
                         data: 'kandidat_id',
                         name: 'kandidat_id',
                     },
-                    // {
-                    //     data: 'pemilih_id',
-                    //     name: 'pemilih_id',
-                    // },
                     {
-                        data: 'id_nfc',
-                        name: 'id_nfc',
-                        width: '30%'
+                        data: 'pemilih_id',
+                        name: 'pemilih_id',
                     },
+                    // {
+                    //     data: 'id_nfc',
+                    //     name: 'id_nfc',
+                    //     width: '30%'
+                    // },
                     {
                         data: 'no_urut',
                         name: 'no_urut',
