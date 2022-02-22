@@ -13,10 +13,10 @@
                     url: '{!! url()->current() !!}',
                 },
                 columns: [
-                    // {
-                    //     data: 'id',
-                    //     name: 'id',
-                    // },
+                    {
+                        data: 'id',
+                        name: 'id',
+                    },
                     {
                         data: 'kandidat_id',
                         name: 'kandidat_id',
@@ -57,9 +57,9 @@
             <div class="shadow overflow-hidden sm:rounded-md">
                 <div class="px-4 py-5 bg-white sm:p-6">
                     <table id="crudTable">
-                        <thead>
+                        <thead>  
                             <tr>
-                                {{-- <th class="px-2 py-4">ID</th> --}}
+                                <th class="px-2 py-4">ID</th>
                                 <th class="px-2 py-4">Kandidat ID</th>
                                 <th class="px-2 py-4">Pemilih ID</th>
                                 <th class="px-6 py-4">No Urut</th>
