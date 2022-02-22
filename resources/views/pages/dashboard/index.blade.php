@@ -52,6 +52,22 @@
             </div>
         </div>
     </div>
+    <div class="flex mb-4">
+        <div class="w-1/3 mx-auto">
+            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                <div class="max-w-sm rounded bg-white overflow-hidden shadow-lg mt-6">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Total Hasil Pemilihan</div>
+                        <p class="text-gray-700 text-base">
+                            Hasil saat ini 
+                        </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2 mb-5">
+                        <a href="{{ route('dashboard.hasils.index') }}" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 </x-app-layout>

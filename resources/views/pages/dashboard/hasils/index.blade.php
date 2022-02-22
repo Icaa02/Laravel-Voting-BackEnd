@@ -25,18 +25,18 @@
                         name: 'id_nfc',
                         width: '30%'
                     },
-                    {
-                        data: 'no_urut',
-                        name: 'no_urut',
-                        orderable: false,
-                        searchable: false,
-                        width: '25%'
-                    },
-                    {
-                        data: 'nama_kandidat',
-                        name: 'nama_kandidat',
-                        width: '30%'
-                    },
+                    // {
+                    //     data: 'no_urut',
+                    //     name: 'no_urut',
+                    //     orderable: false,
+                    //     searchable: false,
+                    //     width: '25%'
+                    // },
+                    // {
+                    //     data: 'nama_kandidat',
+                    //     name: 'nama_kandidat',
+                    //     width: '30%'
+                    // },
                 ],
             });
         </script>
@@ -54,11 +54,11 @@
                     <table id="crudTable">
                         <thead>
                             <tr>
-                                <th class="px-2 py-4">ID</th>
+                                <th class="px-2 py-4">No</th>
                                 <th class="px-2 py-4">Kandidat ID</th>
                                 <th class="px-6 py-4">Pemilih ID</th>
-                                <th class="px-6 py-4">No Urut</th>
-                                <th class="px-6 py-4">Kandidat Terpilih</th>
+                                {{-- <th class="px-6 py-4">No Urut</th>
+                                <th class="px-6 py-4">Kandidat Terpilih</th> --}}
                             </tr>
                         </thead>
                         <tbody></tbody>
