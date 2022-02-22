@@ -55,6 +55,4 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
         Route::resource('pemilihs', PemilihsController::class);
         Route::resource('hasils', HasilsController::class);
     });
-
-    Route::get('hasils', HasilsController::class);
 });
