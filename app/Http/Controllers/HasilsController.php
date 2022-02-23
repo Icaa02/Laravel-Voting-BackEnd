@@ -18,7 +18,7 @@ class HasilsController extends Controller
      */
     public function index()
     {
-        // $hasils = Hasils::all();
+        $query = Hasils::all();
         // return view('hasils.index', compact('hasils'));
         // return view('pages.dashboard.hasils.index');
         // return $hasils;
@@ -26,7 +26,7 @@ class HasilsController extends Controller
         // return view('index', ['hasils' => $select]);
 
         if (request()->ajax()) {
-            $query = Hasils::all();
+            // $query = Hasils::all();
 
             return DataTables::of($query)
                 ->editColumn('nama_kandidat', function ($item) {
