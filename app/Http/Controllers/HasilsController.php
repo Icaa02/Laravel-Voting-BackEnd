@@ -18,10 +18,10 @@ class HasilsController extends Controller
      */
     public function index()
     {
-        $hasils = Hasils::all();
+        // $hasils = Hasils::all();
         // return view('hasils.index', compact('hasils'));
         // return view('pages.dashboard.hasils.index');
-        return $hasils;
+        // return $hasils;
         // $select = DB::select('select * from hasils');
         // return view('index', ['hasils' => $select]);
 
