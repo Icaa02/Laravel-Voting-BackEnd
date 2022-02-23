@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Hasils;
 use App\Models\Kandidats;
 use App\Models\Locations;
 use App\Models\LocationsGallery;
@@ -18,6 +19,7 @@ class DashboardController extends Controller
         $users = User::all();
         $kandidat = Kandidats::all();
         $pemilih = Pemilihs::all();
-        return view('pages.dashboard.index', compact(['locations', 'gallery', 'users', 'kandidat', 'pemilih']));
+        $hasil = Hasils::all();
+        return view('pages.dashboard.index', compact(['locations', 'gallery', 'users', 'kandidat', 'pemilih', 'hasil']));
     }
 }

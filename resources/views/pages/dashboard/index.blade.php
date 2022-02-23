@@ -59,7 +59,7 @@
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">Total Hasil Pemilihan</div>
                         <p class="text-gray-700 text-base">
-                            Hasil saat ini 
+                            Hasil saat ini {{ $hasil->count() }}
                         </p>
                     </div>
                     <div class="px-6 pt-4 pb-2 mb-5">
