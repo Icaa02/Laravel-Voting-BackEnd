@@ -27,6 +27,6 @@ class Hasils extends Model
 
     public function pemilihs()
     {
-        return $this->hasOne(Pemilihs::class, 'pemilih_id', 'id_nfc');
+        return $this->hasOne(Pemilihs::class, 'pemilih_id', 'id');
     }
 }
