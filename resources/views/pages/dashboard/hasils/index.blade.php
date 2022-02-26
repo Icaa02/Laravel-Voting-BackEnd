@@ -25,11 +25,11 @@
                         data: 'pemilih_id',
                         name: 'pemilih_id',
                     },
-                    // {
-                    //     data: 'id_nfc',
-                    //     name: 'id_nfc',
-                    //     width: '30%'
-                    // },
+                    {
+                        data: 'id_nfc',
+                        name: 'id_nfc',
+                        width: '30%'
+                    },
                     {
                         data: 'no_urut',
                         name: 'no_urut',
@@ -62,6 +62,7 @@
                                 <th class="px-2 py-4">ID</th>
                                 <th class="px-2 py-4">Kandidat ID</th>
                                 <th class="px-2 py-4">Pemilih ID</th>
+                                <th class="px-2 py-4">ID NFC</th>
                                 <th class="px-6 py-4">No Urut</th>
                                 <th class="px-6 py-4">Kandidat Terpilih</th>
                             </tr>
