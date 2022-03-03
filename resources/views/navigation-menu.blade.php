@@ -27,6 +27,9 @@
                     <x-jet-nav-link href="{{ route('dashboard.hasils.index') }}" :active="request()->routeIs('dashboard.hasils.index')">
                         {{ __('Hasil Pemilihan') }}
                     </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('dashboard.tps.index') }}" :active="request()->routeIs('dashboard.tps.index')">
+                        {{ __('Kode Tps') }}
+                    </x-jet-nav-link>
                 </div>
             </div>
 

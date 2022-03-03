@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Locations') }}
+            {{ __('Kode TPS') }}
         </h2>
     </x-slot>
 
@@ -14,37 +14,23 @@
                 },
                 columns: [{
                         data: 'id',
-                        name: 'id',
+                        name: 'id'
                     },
                     {
-                        data: 'name',
-                        name: 'name'
+                        data: 'tps',
+                        name: 'tps'
                     },
                     {
-                        data: 'latitude',
-                        name: 'latitude'
-                    },
-                    {
-                        data: 'longitude',
-                        name: 'longitude'
-                    },
-                    {
-                        data: 'address',
-                        name: 'address'
-                    },
-                    {
-                        data: 'open_time',
-                        name: 'open_time'
-                    },
-                    {
-                        data: 'facility',
-                        name: 'facility'
+                        data: 'kode_tps',
+                        name: 'kode_tps'
                     },
                     {
                         data: 'action',
                         name: 'action',
                         orderable: false,
                         searchable: false,
+                        searchable: false,
+                        width: '15%'
                     },
                 ],
             });
@@ -54,8 +40,8 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="mb-10">
-                <a href="{{ route('dashboard.locations.create') }}" class="py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700">
-                    + Tambah Lokasi
+                <a href="{{ route('dashboard.tps.create') }}" class="py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700">
+                    + Tambah Kode TPS
                 </a>
             </div>
             <div class="shadow overflow-hidden sm:rounded-md">
@@ -64,12 +50,8 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Nama</th>
-                                <th>latitude</th>
-                                <th>longitude</th>
-                                <th>Alamat</th>
-                                <th>Waktu Buka</th>
-                                <th>Fasilitas</th>
+                                <th>TPS</th>
+                                <th>Kode TPS</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -79,4 +61,5 @@
             </div>
         </div>
     </div>
+
 </x-app-layout>

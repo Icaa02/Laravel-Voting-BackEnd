@@ -4,22 +4,21 @@ namespace App\Http\Controllers;
 
 use App\Models\Hasils;
 use App\Models\Kandidats;
-use App\Models\Locations;
-use App\Models\LocationsGallery;
+use App\Models\kode_tps;
 use App\Models\Pemilihs;
 use App\Models\User;
-use Illuminate\Http\Request;
+
 
 class DashboardController extends Controller
 {
     public function index()
     {
-        $locations = Locations::all();
-        $gallery = LocationsGallery::all();
+
         $users = User::all();
         $kandidat = Kandidats::all();
+        //$kandidat1 = Hasils::where('id_kandidat', 1);
         $pemilih = Pemilihs::all();
         $hasil = Hasils::all();
-        return view('pages.dashboard.index', compact(['locations', 'gallery', 'users', 'kandidat', 'pemilih', 'hasil']));
+        return view('pages.dashboard.index', compact(['users', 'kandidat', 'pemilih', 'hasil']));
     }
 }

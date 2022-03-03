@@ -2,8 +2,8 @@
 
 use App\Http\Controllers\API\HasilController;
 use App\Http\Controllers\API\KandidatsController;
-use App\Http\Controllers\API\LocationController;
 use App\Http\Controllers\API\PemilihsController;
+use App\Http\Controllers\API\KodeTpsController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -22,8 +22,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('locations', [LocationController::class, 'all']);
+
 Route::get('kandidat', [KandidatsController::class, 'all']);
 Route::get('pemilih', [PemilihsController::class, 'all']);
 Route::get('hasil', [HasilController::class, 'all']);
+Route::get('tps', [KodeTpsController::class, 'all']);
 Route::post('pemilihan', [HasilController::class, 'store']);

@@ -27,4 +27,10 @@ class Pemilihs extends Model
     {
         return $this->hasMany(Hasils::class, 'pemilih_id', 'id');
     }
+
+    //saya bikin
+    public function kode_tps()
+    {
+        return $this->hasMany(kode_tps::class, 'no_tps', 'id');
+    }
 }

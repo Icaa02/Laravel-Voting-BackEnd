@@ -4,6 +4,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HasilsController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KandidatsController;
+use App\Http\Controllers\KodeTpsController;
 use App\Http\Controllers\LocationsController;
 use App\Http\Controllers\LocationsGalleryController;
 use App\Http\Controllers\PemilihsController;
@@ -54,5 +55,6 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
         Route::resource('kandidats', KandidatsController::class);
         Route::resource('pemilihs', PemilihsController::class);
         Route::resource('hasils', HasilsController::class);
+        Route::resource('tps', KodeTpsController::class);
     });
 });
